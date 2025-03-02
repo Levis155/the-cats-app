@@ -1,0 +1,140 @@
+:root {
+  --primary-font: "Inter", sans-serif;
+  --pink-color: rgb(250, 208, 196);
+  --purple-color: rgb(198, 152, 180);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body{
+  font-family: var(--primary-font);
+}
+
+.error-text{
+  text-align: center;
+  color: white;
+  background-color: red;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.invisible{
+  display: none;
+}
+
+.visible{
+  display: block;
+}
+
+.form-container{
+background-color: var(--pink-color);
+padding: 5rem 2rem;
+}
+
+.title{
+  text-align: center;
+  font-size: 4rem;
+  text-transform: capitalize;
+}
+
+.inputs-container{
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  gap: 9rem;
+}
+
+@media screen and (max-width: 59.375em) {
+  .inputs-container{
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+}
+
+.inputs-container p{
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.inputs-container input{
+  padding: 1.1rem 3rem;
+  font-size: 2rem;
+  width: 30rem;
+  height: 5.5rem;
+  border-radius: 5px;
+  border-style: none;
+  font-family: var(--primary-font);
+}
+
+.inputs-container input::placeholder{
+  color: var(--purple-color);
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 28.125em) {
+  .input-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+  }
+}
+
+button{
+  height: 5.5rem;
+  width: 10rem;
+  border-radius: 5px;
+  border-style: none;
+  color: white;
+  background-color: var(--purple-color);
+  cursor: pointer;
+}
+
+button:disabled{
+  background-color: lightgray;
+  color: black;
+}
+
+.results-container{
+  padding: 6rem 20rem;
+}
+
+@media screen and (max-width: 56.25em) {
+  .results-container{
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+li{
+  font-family: var(--primary-font);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.images-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.images-container img{
+  width: 30rem;
+  height: 29rem;
+  object-fit: cover;
+}

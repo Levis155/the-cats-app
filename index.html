@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/assets/images/cat-logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Cats App</title>
+    <link rel="stylesheet" href="./src/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <p class="error-text invisible">There was an error. Please try again later.</p>
+
+    <form class="form-container">
+      <h1 class="title">the cats app</h1>
+
+      <div class="inputs-container">
+        <div class="input-container">
+          <p>Number of cats facts (50 maximum)</p>
+
+          <input type="number" class="facts-input" id="facts-input" placeholder="number of cat facts (50 max)" />
+          <button class="facts-button" id="facts-button" type="button">submit</button>
+        </div>
+
+        <div class="input-container">
+          <p>Number of cats photos (10 maximum)</p>
+
+          <input type="number" class="images-input" id="images-input" placeholder="number of cat photos (10 max)" />
+          <button class="images-button" id="images-button" type="button">submit</button>
+        </div>
+      </div>
+    </form>
+
+    <div class="results-container">
+      <ol class="facts-list" type="1"></ol>
+
+      <div class="images-container">
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
